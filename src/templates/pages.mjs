@@ -87,7 +87,7 @@ Your details are used to reply to you, book an estimate and keep in touch about 
 
 ## Service providers
 
-Form submissions may be delivered to us by an email or automation service. Maps on this site come from Google Maps and images load from Unsplash; those services may record basic technical information such as IP addresses under their own policies.
+Form submissions may be delivered to us by an email or automation service. Maps on this site come from Google Maps, which may record basic technical information such as IP addresses under their own policies.
 
 ## Your rights
 

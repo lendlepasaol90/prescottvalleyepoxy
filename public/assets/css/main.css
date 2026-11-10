@@ -469,3 +469,6 @@ strong { font-weight: 600; }
   .vista__bg { inset: 0; transform: none !important; }
 }
 @media print { .hd, .mcall, .ft__map, .ef { display: none !important; } }
+
+/* Let comparison tables scroll inside their box instead of widening the page */
+main *:has(table) { min-width: 0; }

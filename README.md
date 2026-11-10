@@ -38,7 +38,7 @@ No `npm install` is needed to build. Wrangler is only needed to deploy from the 
 
 ## Images
 
-Photos are licensed Unsplash images (free for commercial use) served from the Unsplash CDN with automatic WebP/AVIF and responsive sizes. Every image is listed in `src/site.mjs → images`. To use Envato or custom photos, put files in `src/assets/img/` and set `src: '/assets/img/name.webp'` on that entry instead of `id`.
+Photos are licensed from Envato Elements (registered to this site) and self-hosted as responsive WebP files in `src/assets/img/` (`<key>-<width>.webp`). Each entry in `src/site.mjs → images` lists its file key, original size, generated widths and alt text. To swap a photo, add new `<key>-480/800/1200/1600.webp` files and update the entry.
 
 ## Content rules
 

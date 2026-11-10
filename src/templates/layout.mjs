@@ -29,7 +29,7 @@ export function layout({ path, title, description, body, current = '', image = '
       : []),
     ...schema,
   ];
-  const ogImage = imgUrl(image, 1200, 630);
+  const ogImage = abs(imgUrl(image, 1200, 630));
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -56,7 +56,6 @@ export function layout({ path, title, description, body, current = '', image = '
 <meta name="geo.region" content="US-AZ">
 <meta name="geo.placename" content="${esc(site.cityLong)}, ${esc(site.region)}">
 <!-- Favicon placeholder: add /favicon.ico and icon links here once the brand mark is ready. -->
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">

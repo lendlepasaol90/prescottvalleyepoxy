@@ -146,7 +146,7 @@ export function renderHome() {
       <figure class="in">${img('garageSport', { widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>High-gloss garage</figcaption></figure>
       <figure class="in w1">${img('livingWindows', { widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Satin interior</figcaption></figure>
       <figure class="in">${img('vintageGarage', { widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Showcase garage</figcaption></figure>
-      <figure class="in w1">${img('laundry', { widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Fine flake utility room</figcaption></figure>
+      <figure class="in w1">${img('laundry', { widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Laundry and utility room</figcaption></figure>
     </div>
   </div>
 </section>
@@ -234,10 +234,10 @@ export function renderHome() {
   <div class="wrap">
     <div class="rule-h in"><h2 id="gal-h">Featured floor finishes</h2><p>A look at the kinds of floors we install. Samples come to every estimate.</p></div>
     <div class="gal">
-      <figure class="wipe">${img('garageTwo', { widths: [600, 900], sizes: '(max-width: 980px) 92vw, 600px', ratio: 1.2 })}<figcaption>Full-broadcast garage flake</figcaption></figure>
+      <figure class="wipe">${img('garageTwo', { widths: [600, 900], sizes: '(max-width: 980px) 92vw, 600px', ratio: 1.2 })}<figcaption>Bright, sealed garage floor</figcaption></figure>
       <figure class="wipe">${img('livingRoom', { widths: [600, 900], sizes: '(max-width: 980px) 92vw, 600px', ratio: 2.4 })}<figcaption>Seamless living area</figcaption></figure>
       <figure class="wipe">${img('autoShop', { widths: [300, 500], sizes: '(max-width: 980px) 46vw, 300px', ratio: 1.2 })}<figcaption>Service bay</figcaption></figure>
-      <figure class="wipe">${img('housePool', { widths: [300, 500], sizes: '(max-width: 980px) 46vw, 300px', ratio: 1.2 })}<figcaption>Patio coating</figcaption></figure>
+      <figure class="wipe">${img('housePool', { widths: [300, 500], sizes: '(max-width: 980px) 46vw, 300px', ratio: 1.2 })}<figcaption>Pool and patio decks</figcaption></figure>
     </div>
   </div>
 </section>

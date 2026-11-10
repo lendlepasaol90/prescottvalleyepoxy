@@ -36,10 +36,14 @@ export function md(src = '') {
     .join('\n');
 }
 
-// Unsplash CDN URL with automatic format negotiation (AVIF/WebP).
+// Self-hosted images: each entry lists the widths generated as /assets/img/<file>-<width>.webp
+const pickW = (im, w) => im.widths.find((x) => x >= w) ?? im.widths[im.widths.length - 1];
+const localPath = (im, w) => `/assets/img/${im.file}-${pickW(im, w)}.webp`;
+
 export const imgUrl = (key, w = 1200, h) => {
   const im = typeof key === 'string' ? images[key] : key;
   if (!im) throw new Error(`Unknown image: ${key}`);
+  if (im.file) return localPath(im, w);
   if (im.src) return im.src;
   return `https://images.unsplash.com/${im.id}?auto=format&fit=crop&w=${w}${h ? `&h=${h}` : ''}&q=70`;
 };
@@ -48,6 +52,14 @@ export const imgUrl = (key, w = 1200, h) => {
 export function img(key, { sizes = '100vw', widths = [480, 800, 1200, 1600], ratio, cls = '', eager = false, alt } = {}) {
   const im = images[key];
   if (!im) throw new Error(`Unknown image: ${key}`);
+  if (im.file) {
+    const ws = [...new Set(widths.map((w) => pickW(im, w)))];
+    const mid = pickW(im, widths[Math.min(2, widths.length - 1)]);
+    const hh = ratio ? Math.round(mid / ratio) : Math.round((mid * im.h) / im.w);
+    return `<img src="${localPath(im, mid)}" srcset="${ws.map((w) => `${localPath(im, w)} ${w}w`).join(', ')}" sizes="${sizes}" alt="${esc(alt ?? im.alt)}" width="${mid}" height="${hh}"${
+      ratio ? ` style="aspect-ratio:${+ratio.toFixed(4)};object-fit:cover"` : ''
+    } ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"${cls ? ` class="${cls}"` : ''}>`;
+  }
   const h = (w) => (ratio ? Math.round(w / ratio) : undefined);
   const srcset = widths.map((w) => `${imgUrl(key, w, h(w))} ${w}w`).join(', ');
   const mid = widths[Math.min(2, widths.length - 1)];

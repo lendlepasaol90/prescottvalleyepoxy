@@ -127,7 +127,7 @@ The material costs more than standard epoxy, but on most garages, prep and labor
     { q: 'Can you install it in November?', a: 'Often, yes. Polyaspartic tolerates cooler conditions than epoxy. We check slab temperature on the day and use temporary heat if needed.' },
     { q: 'How soon can I park?', a: 'Usually within one to two days. We confirm hardness and give you written timing.' },
     { q: 'Will it yellow?', a: 'No. It is formulated to hold its color in sunlight, which is why we use it on garages and porches here.' },
-    { q: 'Is it better than epoxy?', a: 'For topcoats, speed and sun exposure, yes. Epoxy remains excellent for base layers and metallic floors.' },
+    { q: 'Is it better than epoxy?', a: 'It wins on cure speed and sunlight, which is why it makes such a good top layer. Epoxy still earns its place underneath and in decorative metallic work.' },
     { q: 'Does it handle deicer?', a: 'Yes. It resists common deicers and meltwater well. Occasional rinsing keeps it looking its best.' },
     { q: 'Can it go over my existing floor?', a: 'If your current coating is well bonded, it can often be sanded and topcoated. Failing coatings need to be removed first.' },
     { q: 'Is there a strong smell?', a: 'There is some odor during application that clears quickly with ventilation.' },
