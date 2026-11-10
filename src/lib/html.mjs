@@ -49,7 +49,22 @@ export const imgUrl = (key, w = 1200, h) => {
 };
 
 // Responsive <img>. `ratio` (w/h) crops consistently across widths.
-export function img(key, { sizes = '100vw', widths = [480, 800, 1200, 1600], ratio, cls = '', eager = false, alt } = {}) {
+// Page-level de-duplication: between beginDedupe() and endDedupe(), a photo that has already
+// appeared (or is reserved for a captioned spot) is swapped for an unused photo from the same group.
+let dd = null;
+export const beginDedupe = (reserve = []) => { dd = { used: new Set(), reserve: new Set(reserve) }; };
+export const endDedupe = () => { dd = null; };
+function resolveKey(key, keep) {
+  if (!dd) return key;
+  if (keep || (!dd.used.has(key) && !dd.reserve.has(key))) { dd.used.add(key); return key; }
+  const g = images[key]?.group;
+  const alt = g && Object.keys(images).find((k) => images[k].group === g && !dd.used.has(k) && !dd.reserve.has(k));
+  if (alt) { dd.used.add(alt); return alt; }
+  return key;
+}
+
+export function img(key, { sizes = '100vw', widths = [480, 800, 1200, 1600], ratio, cls = '', eager = false, alt, keep = false } = {}) {
+  key = resolveKey(key, keep);
   const im = images[key];
   if (!im) throw new Error(`Unknown image: ${key}`);
   if (im.file) {

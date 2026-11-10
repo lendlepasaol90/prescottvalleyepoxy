@@ -1,5 +1,5 @@
 import { site } from '../site.mjs';
-import { esc, md, img } from '../lib/html.mjs';
+import { esc, md, img, beginDedupe, endDedupe } from '../lib/html.mjs';
 import { layout } from './layout.mjs';
 import { leadForm, phoneLink } from './parts.mjs';
 import { services } from '../content/services/index.mjs';
@@ -33,6 +33,7 @@ const faqGroups = [
 ];
 
 export function renderHome() {
+  beginDedupe(['autoShop', 'garageBright', 'garageSport', 'garageTwo', 'housePool', 'laundry', 'livingRoom', 'livingWindows', 'vintageGarage']);
   const ledger = services
     .map((s, i) => `<details${i === 0 ? ' open' : ''}>
       <summary><div><h3>${esc(s.name)}</h3><span>${esc(s.tagline)}</span></div><i aria-hidden="true">+</i></summary>
@@ -52,7 +53,7 @@ export function renderHome() {
       </div>
     </div>
     <div class="hero__grid">
-      <div class="hero__img wipe">${img('garageTwo', { eager: true, sizes: '(max-width: 980px) 92vw, 780px', widths: [600, 900, 1300, 1600], ratio: 16 / 8.5 })}</div>
+      <div class="hero__img wipe">${img('garageTwo', { keep: true, eager: true, sizes: '(max-width: 980px) 92vw, 780px', widths: [600, 900, 1300, 1600], ratio: 16 / 8.5 })}</div>
       <div class="hero__stack">
         <div class="fact in"><b><span data-count="5100">5,100</span> ft</b><span class="fact__lbl">Roughly the valley's elevation: warm summers, freezing winter nights and real snow some years.</span></div>
         <div class="fact in w1"><b><span data-count="9">9</span> systems</b><span class="fact__lbl">From garage flake floors to commercial and warehouse coatings.</span></div>
@@ -143,10 +144,10 @@ export function renderHome() {
       <p><a class="more" href="/metallic-epoxy-flooring/">Metallic epoxy</a></p>
     </div>
     <div class="tiles4">
-      <figure class="in">${img('garageSport', { widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>High-gloss garage</figcaption></figure>
-      <figure class="in w1">${img('livingWindows', { widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Satin interior</figcaption></figure>
-      <figure class="in">${img('vintageGarage', { widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Showcase garage</figcaption></figure>
-      <figure class="in w1">${img('laundry', { widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Laundry and utility room</figcaption></figure>
+      <figure class="in">${img('garageSport', { keep: true, widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>High-gloss garage</figcaption></figure>
+      <figure class="in w1">${img('livingWindows', { keep: true, widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Satin interior</figcaption></figure>
+      <figure class="in">${img('vintageGarage', { keep: true, widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Showcase garage</figcaption></figure>
+      <figure class="in w1">${img('laundry', { keep: true, widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>Laundry and utility room</figcaption></figure>
     </div>
   </div>
 </section>
@@ -234,10 +235,10 @@ export function renderHome() {
   <div class="wrap">
     <div class="rule-h in"><h2 id="gal-h">Featured floor finishes</h2><p>A look at the kinds of floors we install. Samples come to every estimate.</p></div>
     <div class="gal">
-      <figure class="wipe">${img('garageTwo', { widths: [600, 900], sizes: '(max-width: 980px) 92vw, 600px', ratio: 1.2 })}<figcaption>Bright, sealed garage floor</figcaption></figure>
-      <figure class="wipe">${img('livingRoom', { widths: [600, 900], sizes: '(max-width: 980px) 92vw, 600px', ratio: 2.4 })}<figcaption>Seamless living area</figcaption></figure>
-      <figure class="wipe">${img('autoShop', { widths: [300, 500], sizes: '(max-width: 980px) 46vw, 300px', ratio: 1.2 })}<figcaption>Service bay</figcaption></figure>
-      <figure class="wipe">${img('housePool', { widths: [300, 500], sizes: '(max-width: 980px) 46vw, 300px', ratio: 1.2 })}<figcaption>Pool and patio decks</figcaption></figure>
+      <figure class="wipe">${img('garageBright', { keep: true, widths: [600, 900], sizes: '(max-width: 980px) 92vw, 600px', ratio: 1.2 })}<figcaption>Bright, sealed garage floor</figcaption></figure>
+      <figure class="wipe">${img('livingRoom', { keep: true, widths: [600, 900], sizes: '(max-width: 980px) 92vw, 600px', ratio: 2.4 })}<figcaption>Seamless living area</figcaption></figure>
+      <figure class="wipe">${img('autoShop', { keep: true, widths: [300, 500], sizes: '(max-width: 980px) 46vw, 300px', ratio: 1.2 })}<figcaption>Service bay</figcaption></figure>
+      <figure class="wipe">${img('housePool', { keep: true, widths: [300, 500], sizes: '(max-width: 980px) 46vw, 300px', ratio: 1.2 })}<figcaption>Pool and patio decks</figcaption></figure>
     </div>
   </div>
 </section>
@@ -271,6 +272,7 @@ export function renderHome() {
   </div>
 </section>`;
 
+  endDedupe();
   return layout({
     path: '/',
     title: 'Prescott Valley Epoxy | Garage & Concrete Floor Coatings',
