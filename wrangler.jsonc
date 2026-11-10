@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "prescottvalleyepoxy",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-01",
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": true
+  },
+  "vars": {
+    "SITE_NAME": "Prescott Valley Epoxy"
+  }
+  // Custom domain: attach prescottvalleyepoxy.com (and www) under
+  // Workers & Pages → prescottvalleyepoxy → Settings → Domains & Routes,
+  // or uncomment once the zone is in this Cloudflare account:
+  // "routes": [
+  //   { "pattern": "prescottvalleyepoxy.com", "custom_domain": true },
+  //   { "pattern": "www.prescottvalleyepoxy.com", "custom_domain": true }
+  // ]
+}
