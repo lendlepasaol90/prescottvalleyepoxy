@@ -1,5 +1,5 @@
 export default {
-  slug: 'metallic-epoxy-flooring',
+  slug: 'metallic-epoxy-floors',
   name: 'Metallic Epoxy Flooring',
   tagline: 'Custom, flowing finishes with real depth',
   summary: 'Hand-worked metallic finishes with depth and movement for bonus rooms, living areas, showrooms and offices.',
@@ -79,7 +79,7 @@ A tinted base coat underneath sets the background tone. A darker base makes silv
         ['Sunlight', 'Beautiful in natural light', 'UV-stable topcoat needed near windows'],
         ['Repairs', 'Topcoat can be renewed', 'Pattern repairs are hard to blend'],
       ],
-      after: `For a working garage or a busy mudroom, a [flake floor](/decorative-flake-flooring/) is usually a better fit. For a room where the floor is meant to be noticed, metallic is hard to beat.`,
+      after: `For a working garage or a busy mudroom, a [flake floor](/decorative-flake/) is usually a better fit. For a room where the floor is meant to be noticed, metallic is hard to beat.`,
     },
     {
       kind: 'local',
@@ -125,11 +125,11 @@ Sunlight is the other factor. At this elevation, UV through large windows is str
     { q: 'Can metallic go in a garage?', a: 'It can, if the garage is mostly for parking a car you care about. For a garage full of tools, bikes and projects, we would point you to flake.' },
     { q: 'How long does it take?', a: 'Most rooms take the better part of a week from first grind to putting the sofa back.' },
     { q: 'Is it slippery?', a: 'Gloss metallic is smooth. We can add a satin topcoat with a fine texture where slips are a concern.' },
-    { q: 'Can a business use a metallic floor?', a: 'Absolutely. Showrooms, salons and offices often choose metallic with a tougher commercial topcoat. See [commercial flooring](/commercial-epoxy-flooring/).' },
+    { q: 'Can a business use a metallic floor?', a: 'Absolutely. Showrooms, salons and offices often choose metallic with a tougher commercial topcoat. See [commercial flooring](/business-floor-coatings/).' },
     { q: 'Will it work over radiant heat?', a: 'Often, with the heat turned down during installation and brought back gradually. We confirm product suitability first.' },
     {"q": "Will a metallic floor look busy in a small room?", "a": "Not if the palette and movement are chosen well. Softer, lower-contrast patterns suit smaller rooms, while bolder movement works in larger spaces."},
     {"q": "Can you match the floor to new cabinets?", "a": "Yes. Bring a cabinet door or sample and we will choose pigments and a base tone that complement it."},
   ],
-  related: ['residential-epoxy-flooring', 'commercial-epoxy-flooring', 'decorative-flake-flooring'],
+  related: ['residential-floors', 'business-floor-coatings', 'decorative-flake'],
   cta: { heading: 'Start with a metallic design meeting', body: 'We will bring sample boards, talk through palettes, check the slab and provide a written estimate with realistic expectations.' },
 };

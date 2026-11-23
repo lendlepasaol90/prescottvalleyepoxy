@@ -1,5 +1,5 @@
 export default {
-  slug: 'residential-epoxy-flooring',
+  slug: 'residential-floors',
   name: 'Residential Epoxy Flooring',
   tagline: 'Laundry rooms, casitas, bonus rooms and living areas',
   summary: 'Seamless interior floors for laundry rooms, casitas, bonus rooms and living areas. Easy to clean and easy to move on.',
@@ -62,7 +62,7 @@ For families with young children, the same benefits apply: easy cleanup, no grou
       items: [
         { name: 'Satin solid color', body: 'A soft, low-glare sheen in warm greys, stone or sage. Calm, modern and forgiving of footprints.' },
         { name: 'Micro flake', body: 'A fine speckled texture that hides everyday dust. Ideal for laundry rooms and mudrooms.' },
-        { name: 'Metallic', body: 'Flowing, reflective pigments for a statement bonus room or living area. See [metallic epoxy](/metallic-epoxy-flooring/).' },
+        { name: 'Metallic', body: 'Flowing, reflective pigments for a statement bonus room or living area. See [metallic epoxy](/metallic-epoxy-floors/).' },
         { name: 'Clear-sealed concrete', body: 'For slabs in good condition, a clear system that keeps the natural concrete look.' },
       ],
     },
@@ -134,6 +134,6 @@ We also pay attention to sun. Rooms with large south- or west-facing windows get
     { q: 'Does the floor need resealing?', a: 'Not on a schedule. If high-traffic paths start to dull after years of use, a fresh topcoat restores the finish.' },
     {"q": "Can you coat a room with radiant floor heat?", "a": "Often, yes. The heat is turned down for installation and brought back up gradually afterward. We confirm product suitability before quoting."},
   ],
-  related: ['metallic-epoxy-flooring', 'decorative-flake-flooring', 'garage-floor-coatings'],
+  related: ['metallic-epoxy-floors', 'decorative-flake', 'garage-epoxy'],
   cta: { heading: 'Plan an interior floor', body: 'We will test the slab, bring samples to see in your rooms and give you a written estimate with clear timing.' },
 };

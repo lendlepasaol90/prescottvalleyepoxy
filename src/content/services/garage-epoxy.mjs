@@ -1,5 +1,5 @@
 export default {
-  slug: 'garage-floor-coatings',
+  slug: 'garage-epoxy',
   name: 'Garage Floor Coatings',
   tagline: 'New-build and older garages, prepped and sealed properly',
   summary: 'Garage coatings that remove builder sealers, repair winter damage and finish with a durable, textured topcoat.',
@@ -46,7 +46,7 @@ Once the floor is sealed, that winter cycle stops. Water and salt stay on the su
         { name: 'Full flake with clear topcoat', body: 'A pigmented base, wall-to-wall chips and a clear, textured polyaspartic topcoat. Hides dust and tire marks and holds up beautifully. The choice for most valley garages.' },
         { name: 'Partial flake', body: 'A solid base color with a lighter chip scatter for a cleaner, more modern look. Popular in garages that double as gyms or hobby spaces.' },
         { name: 'Solid color with texture', body: 'Simple and bright, with aggregate in the topcoat for grip. A good fit for workshops and storage-heavy garages.' },
-        { name: 'Heavy-duty polyurea base', body: 'For shops, RV bays and garages with lots of cracking or heavy equipment. More on [polyurea coatings](/polyurea-floor-coatings/).' },
+        { name: 'Heavy-duty polyurea base', body: 'For shops, RV bays and garages with lots of cracking or heavy equipment. More on [polyurea coatings](/polyurea-floors/).' },
       ],
     },
     {
@@ -140,6 +140,6 @@ Put a mat or plywood square under kickstands and jack stands. If the topcoat dul
     { q: 'Do you coat the stem walls?', a: 'We can. Many homeowners like the finished look, and it protects the walls from splashes and road grime.' },
     { q: 'Can you work around my HOA rules?', a: 'Yes. We follow community guidelines on work hours, parking and equipment, and keep the driveway clean.' },
   ],
-  related: ['decorative-flake-flooring', 'polyaspartic-floor-coatings', 'polyurea-floor-coatings'],
+  related: ['decorative-flake', 'polyaspartic-floors', 'polyurea-floors'],
   cta: { heading: 'Get your garage estimate', body: 'We will check the slab for sealers, moisture and damage, bring flake samples and leave you with a clear, written price.' },
 };

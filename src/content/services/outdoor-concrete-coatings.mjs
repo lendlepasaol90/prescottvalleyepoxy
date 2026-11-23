@@ -1,5 +1,5 @@
 export default {
-  slug: 'patio-concrete-coatings',
+  slug: 'outdoor-concrete-coatings',
   name: 'Patio & Concrete Coatings',
   tagline: 'Back patios, front entries, walks and spa pads',
   summary: 'Coatings and sealers for patios, entries, walkways and spa pads that face sun, monsoon rain and freezing nights.',
@@ -126,6 +126,6 @@ Sealers are the most affordable option. Coating systems cost more because of gri
     { q: 'How often does a sealer need reapplying?', a: 'It depends on exposure and product, but many are refreshed every few years.' },
     {"q": "Can you coat around my hot tub without moving it?", "a": "Usually we can coat or seal around a tub that cannot be moved, finishing neatly to its base. If the tub can be shifted temporarily, full coverage underneath is possible."},
   ],
-  related: ['decorative-flake-flooring', 'polyaspartic-floor-coatings', 'garage-floor-coatings'],
+  related: ['decorative-flake', 'polyaspartic-floors', 'garage-epoxy'],
   cta: { heading: 'Protect your patio and entry', body: 'We will look at your outdoor concrete, recommend a coating or sealer for each surface and give you a clear written estimate.' },
 };

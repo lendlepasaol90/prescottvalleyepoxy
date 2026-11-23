@@ -8,6 +8,9 @@ import { renderHome } from './src/templates/home.mjs';
 import { renderService } from './src/templates/service.mjs';
 import { renderAbout, renderAreas, renderContact, renderPrivacy, render404 } from './src/templates/pages.mjs';
 
+// Estimate buttons jump to the page's own form; pages without one link to the contact page.
+const withEst = (html) => { const m = html.match(/<form[^>]*\bid="([^"]+)"/); return html.split('#__EST__').join(m ? `#${m[1]}` : '/contact/'); };
+
 const root = dirname(fileURLToPath(import.meta.url));
 const out = join(root, 'public');
 const today = new Date().toISOString().slice(0, 10);
@@ -15,9 +18,9 @@ const today = new Date().toISOString().slice(0, 10);
 const pages = [
   { path: '/', html: renderHome(), priority: '1.0' },
   ...services.map((s) => ({ path: `/${s.slug}/`, html: renderService(s), priority: '0.9' })),
-  { path: '/about-us/', html: renderAbout(), priority: '0.6' },
+  { path: '/our-story/', html: renderAbout(), priority: '0.6' },
   { path: '/service-areas/', html: renderAreas(), priority: '0.7' },
-  { path: '/contact-us/', html: renderContact(), priority: '0.7' },
+  { path: '/contact/', html: renderContact(), priority: '0.7' },
   { path: '/privacy-policy/', html: renderPrivacy(), priority: '0.2' },
 ];
 
@@ -28,9 +31,9 @@ await cp(join(root, 'src/assets'), join(out, 'assets'), { recursive: true });
 for (const p of pages) {
   const file = join(out, p.path, 'index.html');
   await mkdir(dirname(file), { recursive: true });
-  await writeFile(file, p.html);
+  await writeFile(file, withEst(p.html));
 }
-await writeFile(join(out, '404.html'), render404());
+await writeFile(join(out, '404.html'), withEst(render404()));
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

@@ -1,5 +1,5 @@
 export default {
-  slug: 'polyaspartic-floor-coatings',
+  slug: 'polyaspartic-floors',
   name: 'Polyaspartic Floor Coatings',
   tagline: 'Quick-curing topcoats that work in all four seasons',
   summary: 'Fast-curing, UV-stable coatings that can be installed across a wide temperature range and return floors to service quickly.',
@@ -69,7 +69,7 @@ The result is a much wider installation window than epoxy alone allows, which ma
       toc: 'System options',
       items: [
         { name: 'Garage flake system', body: 'Base coat, full chip broadcast and a slip-resistant polyaspartic topcoat. The standard for valley garages.' },
-        { name: 'Covered porch and entry', body: 'A UV-stable, textured coating for covered outdoor concrete. See [patio coatings](/patio-concrete-coatings/).' },
+        { name: 'Covered porch and entry', body: 'A UV-stable, textured coating for covered outdoor concrete. See [patio coatings](/outdoor-concrete-coatings/).' },
         { name: 'Quick-turn commercial', body: 'Fast systems for offices, shops and clinics that need to reopen within a day.' },
         { name: 'Topcoat renewal', body: 'A fresh polyaspartic layer over a sound older coating that has dulled.' },
       ],
@@ -134,6 +134,6 @@ The material costs more than standard epoxy, but on most garages, prep and labor
     {"q": "Can polyaspartic fix a yellowed epoxy floor?", "a": "If the old epoxy is well bonded, a polyaspartic topcoat can cover the yellowing and protect against more. If it is peeling, it needs to be removed first."},
     {"q": "Can polyaspartic go on a covered porch?", "a": "Yes. Its UV stability and texture options make it a good choice for covered porches and entries. Uncovered surfaces may suit a sealer better."},
   ],
-  related: ['garage-floor-coatings', 'polyurea-floor-coatings', 'patio-concrete-coatings'],
+  related: ['garage-epoxy', 'polyurea-floors', 'outdoor-concrete-coatings'],
   cta: { heading: 'Ask about a fast-cure floor', body: 'We will check your slab, sun exposure and timing and recommend the right system, with a clear written estimate.' },
 };
