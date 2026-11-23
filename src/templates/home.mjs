@@ -69,7 +69,7 @@ export function renderHome() {
     <div class="intro__body col in w1">
       <p>Prescott Valley has grown fast, and a lot of its homes are relatively new. That is good news for floor coatings: newer slabs are often in great shape. But it also means many garages still have the builder's sealer on them, and many owners have already tried a quick coating that did not last through the first winter.</p>
       <p>We do this work differently. Every project starts with an honest look at the concrete. We check for curing compounds, sealers, moisture, cracks and winter damage, then grind and repair the slab before any coating goes down. Only then do we choose a system, and we choose it for how you actually use the space.</p>
-      <p>That might be a <a href="/garage-floor-coatings/">garage floor coating</a> with a decorative flake finish, a seamless <a href="/residential-epoxy-flooring/">residential floor</a> for a basement, laundry room or casita, a <a href="/metallic-epoxy-flooring/">metallic epoxy</a> feature floor, a fast-curing <a href="/polyaspartic-floor-coatings/">polyaspartic</a> system, a tough <a href="/polyurea-floor-coatings/">polyurea</a> base for a workshop, a textured <a href="/patio-concrete-coatings/">patio coating</a>, or a durable floor for a <a href="/commercial-epoxy-flooring/">business</a> or <a href="/warehouse-floor-coatings/">warehouse</a>. Estimates are free, done in person and always in writing.</p>
+      <p>That might be a <a href="/garage-epoxy/">garage floor coating</a> with a decorative flake finish, a seamless <a href="/residential-floors/">residential floor</a> for a basement, laundry room or casita, a <a href="/metallic-epoxy-floors/">metallic epoxy</a> feature floor, a fast-curing <a href="/polyaspartic-floors/">polyaspartic</a> system, a tough <a href="/polyurea-floors/">polyurea</a> base for a workshop, a textured <a href="/outdoor-concrete-coatings/">patio coating</a>, or a durable floor for a <a href="/business-floor-coatings/">business</a> or warehouse. Estimates are free, done in person and always in writing.</p>
     </div>
   </div>
 </section>
@@ -87,7 +87,7 @@ export function renderHome() {
 
 <section class="s s--paper" id="services" aria-labelledby="svc-h">
   <div class="wrap">
-    <div class="rule-h in"><h2 id="svc-h">Our flooring services</h2><p>Open any service for a quick summary, or follow the link for the full details, finishes and FAQs.</p></div>
+    <div class="rule-h in"><h2 id="svc-h">Our flooring services</h2><p>Open any service for a quick summary, or follow the link for the full details, finishes and FAQs. Warehouses, shops and other large slabs are covered on our business floor coatings page, since the prep and the systems overlap. If you are not sure which page fits your floor, start with the estimate form and describe the space; we will point you to the right system during the visit.</p></div>
     <div class="ledger">${ledger}</div>
   </div>
 </section>
@@ -100,7 +100,7 @@ export function renderHome() {
       <p>In Prescott Valley, the garage floor takes the hardest hits. Snow and slush ride in on wheels a few times each winter, bringing deicer and grit with them. Summer brings hot tires and strong afternoon sun through the door. Spring brings wind and dust. Bare concrete slowly stains, pits and flakes under all of it.</p>
       <p>Our garage systems start with diamond grinding to remove the builder's sealer and open the concrete, followed by crack repair. Then comes a bonding base coat, a decorative flake broadcast and a UV-stable, slip-resistant topcoat.</p>
       <ul class="list-c"><li>Removes builder sealers that block adhesion</li><li>Repairs winter flaking and pitting before coating</li><li>Texture for safe footing when snowmelt comes in</li></ul>
-      <a class="more" href="/garage-floor-coatings/">Garage floor coatings</a>
+      <a class="more" href="/garage-epoxy/">Garage floor coatings</a>
     </div>
   </div>
 </section>
@@ -109,7 +109,7 @@ export function renderHome() {
   <div class="wrap">
     <div class="lead-in in">
       <h2 id="res-h">Residential epoxy flooring inside the house</h2>
-      <p class="dim">Coated concrete is not just for garages. In many Prescott Valley homes, the rooms that work hardest sit right on the slab, and a seamless floor makes them easier to keep clean and nicer to live in. See our <a href="/residential-epoxy-flooring/">residential epoxy flooring</a> page for details on finishes and moisture testing.</p>
+      <p class="dim">Coated concrete is not just for garages. In many Prescott Valley homes, the rooms that work hardest sit right on the slab, and a seamless floor makes them easier to keep clean and nicer to live in. See our <a href="/residential-floors/">residential epoxy flooring</a> page for details on finishes and moisture testing.</p>
     </div>
     <div class="rooms">
       <article class="room in"><figure>${img('laundryWindow', { sizes: '(max-width: 640px) 92vw, 380px', widths: [400, 700], ratio: 4 / 3 })}</figure><div><h3>Laundry and mudrooms</h3><p>Water, detergent and muddy boots, handled by one seamless, washable surface.</p></div></article>
@@ -123,8 +123,8 @@ export function renderHome() {
   <div class="wrap">
     <div class="lead-in in"><h2 id="biz-h">Commercial and industrial flooring</h2><p>Prescott Valley's business corridors along Glassford Hill Road and Highway 69 keep growing, and so does demand for floors that are tough, clean and quick to install.</p></div>
     <div class="biz">
-      <div class="in"><h3>Commercial epoxy flooring</h3><p>Seamless resin floors for retail stores, restaurants, medical and dental offices, salons, fitness studios and auto showrooms. We plan around your hours, phase larger jobs and add texture where floors get wet.</p><ul><li>Retail and showrooms</li><li>Restaurants and kitchens</li><li>Clinics and offices</li><li>Gyms and studios</li></ul><a class="more" href="/commercial-epoxy-flooring/">Commercial floors</a></div>
-      <div class="in w1"><h3>Industrial flooring solutions</h3><p>High-build epoxy and polyurea for warehouses, auto service bays, fabrication shops and storage buildings across the valley. Joint repair, dust-proofing and safety striping included where you need them.</p><ul><li>Warehouses and storage</li><li>Auto and fleet service</li><li>Fabrication shops</li><li>Lane and zone striping</li></ul><a class="more" href="/warehouse-floor-coatings/">Warehouse coatings</a></div>
+      <div class="in"><h3>Commercial epoxy flooring</h3><p>Seamless resin floors for retail stores, restaurants, medical and dental offices, salons, fitness studios and auto showrooms. We plan around your hours, phase larger jobs and add texture where floors get wet.</p><ul><li>Retail and showrooms</li><li>Restaurants and kitchens</li><li>Clinics and offices</li><li>Gyms and studios</li></ul><a class="more" href="/business-floor-coatings/">Commercial floors</a></div>
+      <div class="in w1"><h3>Industrial flooring solutions</h3><p>High-build epoxy and polyurea for warehouses, auto service bays, fabrication shops and storage buildings across the valley. Joint repair, dust-proofing and safety striping included where you need them.</p><ul><li>Warehouses and storage</li><li>Auto and fleet service</li><li>Fabrication shops</li><li>Lane and zone striping</li></ul>Warehouse coatings</div>
     </div>
     <div class="biz__strip">
       <div class="wipe">${img('autoShop', { sizes: '(max-width: 640px) 92vw, 520px', widths: [500, 900], ratio: 1.6 })}</div>
@@ -140,8 +140,8 @@ export function renderHome() {
       <h2 id="deco-h">Decorative and metallic epoxy flooring</h2>
       <p>A coated floor can be a design choice, not just a practical one. Decorative flake floors scatter colored chips through the coating for a speckled, stone-like look that hides dust and wear. Metallic epoxy goes further: reflective pigments are worked by hand into clear resin, creating flowing patterns with real depth.</p>
       <p>For Prescott Valley homes, earthy palettes tend to work best. Sage, stone and warm tan flake blends suit the valley's grassland setting, and metallic floors in pewter, bronze or soft pearl pair well with modern farmhouse and craftsman interiors.</p>
-      <p><a class="more" href="/decorative-flake-flooring/">Decorative flake</a></p>
-      <p><a class="more" href="/metallic-epoxy-flooring/">Metallic epoxy</a></p>
+      <p><a class="more" href="/decorative-flake/">Decorative flake</a></p>
+      <p><a class="more" href="/metallic-epoxy-floors/">Metallic epoxy</a></p>
     </div>
     <div class="tiles4">
       <figure class="in">${img('garageSport', { keep: true, widths: [300, 520], sizes: '(max-width: 640px) 92vw, 300px', ratio: 1 })}<figcaption>High-gloss garage</figcaption></figure>

@@ -8,7 +8,7 @@ const intro = ({ title, lede, image, trail }) => `<section class="sh"><div class
 const card = (id) => `<aside class="sticky-card"><div class="end__card">${leadForm({ id, heading: 'Free estimate', intro: 'We will follow up to set a time that works.' })}</div></aside>`;
 
 export function renderAbout() {
-  const trail = [{ name: 'Home', path: '/' }, { name: 'About us', path: '/about-us/' }];
+  const trail = [{ name: 'Home', path: '/' }, { name: 'Our story', path: '/our-story/' }];
   const body = `${intro({ title: 'About Prescott Valley Epoxy', lede: 'A local floor coating team that puts the concrete first, explains things plainly and leaves your home the way we found it.', image: 'dirtRoad', trail })}
 <section class="s s--sm"><div class="wrap pg2"><div class="in">
 ${md(`Our work rests on one idea: a coating is only as good as its bond to the concrete underneath. Most floors that peel, flake or bubble were never properly attached to the slab. They were rolled over sealer, dust or damp concrete and left to fail.
@@ -28,9 +28,9 @@ Garages are the bulk of our work, from newer two-car garages in master-planned c
 ## What to expect
 
 Call or fill in the estimate form. We will arrange a time to see the floor, measure, check for sealers and moisture, and show you samples. Afterward you get a written estimate. There is no pressure to decide that day, and we are happy to answer questions as you think it over.`)}
-<p style="margin-top:1.5rem"><a class="btn btn--olive" href="/contact-us/">Contact us</a> <a class="btn btn--plain" href="/service-areas/">Where we work</a></p>
+<p style="margin-top:1.5rem"><a class="btn btn--olive" href="/contact/">Contact us</a> <a class="btn btn--plain" href="/service-areas/">Where we work</a></p>
 </div>${card('about-form')}</div></section>`;
-  return layout({ path: '/about-us/', title: 'About Us | Prescott Valley Epoxy', description: 'Learn how Prescott Valley Epoxy approaches floor coatings: real slab preparation, plain-language advice, written estimates and respect for your home.', body, current: 'about', image: 'dirtRoad', breadcrumbs: trail });
+  return layout({ path: '/our-story/', title: 'Our story | Prescott Valley Epoxy', description: 'Learn how Prescott Valley Epoxy approaches floor coatings: real slab preparation, plain-language advice, written estimates and respect for your home.', body, current: 'about', image: 'dirtRoad', breadcrumbs: trail });
 }
 
 const towns = {
@@ -54,11 +54,11 @@ These are the areas we serve most often. If you are not on the list, call anyway
   <div class="col in" style="margin-top:3rem"><h2>Services available throughout the area</h2><ul>${services.map((s) => `<li><a href="/${s.slug}/">${esc(s.name)}</a>: ${esc(s.tagline)}</li>`).join('')}</ul></div>
 </div></section>
 <section class="s end" id="estimate"><div class="wrap end__grid"><div><h2>Not sure you are in range?</h2><p>Send your details and we will confirm coverage when we follow up, or call ${phoneLink()}.</p></div><div class="end__card">${leadForm({ id: 'areas-form', heading: 'Request an estimate', withMessage: true })}</div></div></section>`;
-  return layout({ path: '/service-areas/', title: 'Service Areas | Prescott Valley Epoxy & Quad Cities', description: 'Floor coatings in Prescott Valley, Dewey-Humboldt, Prescott, Chino Valley, Mayer, Cordes Lakes and Paulden. Garages, homes and businesses.', body, current: 'areas', image: 'grassSunset', breadcrumbs: trail });
+  return layout({ path: '/service-areas/', title: 'Service areas | Prescott Valley Epoxy & Quad Cities', description: 'Floor coatings in Prescott Valley, Dewey-Humboldt, Prescott, Chino Valley, Mayer, Cordes Lakes and Paulden. Garages, homes and businesses.', body, current: 'areas', image: 'grassSunset', breadcrumbs: trail });
 }
 
 export function renderContact() {
-  const trail = [{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact-us/' }];
+  const trail = [{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact/' }];
   const body = `${intro({ title: 'Contact us', lede: 'Request a free estimate or ask a question. We will get back to you to talk it through.', image: 'valley', trail })}
 <section class="s s--sm" id="estimate"><div class="wrap pg2">
   <div class="in">
@@ -71,7 +71,7 @@ export function renderContact() {
   </div>
   <div class="end__card in w1">${leadForm({ id: 'contact-form', heading: 'Request your free estimate', withMessage: true })}</div>
 </div></section>`;
-  return layout({ path: '/contact-us/', title: 'Contact Us | Free Floor Estimates in Prescott Valley', description: 'Request a free, in-person estimate for garage, interior, patio or commercial floor coatings in Prescott Valley and the Quad Cities area.', body, current: 'contact', image: 'valley', breadcrumbs: trail });
+  return layout({ path: '/contact/', title: 'Contact Us | Free Floor Estimates in Prescott Valley', description: 'Request a free, in-person estimate for garage, interior, patio or commercial floor coatings in Prescott Valley and the Quad Cities area.', body, current: 'contact', image: 'valley', breadcrumbs: trail });
 }
 
 export function renderPrivacy() {
@@ -91,7 +91,7 @@ Form submissions may be delivered to us by an email or automation service. Maps 
 
 ## Your rights
 
-You can ask us to update or delete information you have sent by contacting us through our [contact page](/contact-us/).
+You can ask us to update or delete information you have sent by contacting us through our [contact page](/contact/).
 
 ## Changes to this policy
 
@@ -100,6 +100,6 @@ If this policy changes, the updated text will replace what you see on this page.
 }
 
 export function render404() {
-  const body = `<section class="oops"><div class="wrap col"><h1>Page not found</h1><p class="big dim">That address does not match any page on this site. These links will help you find your way.</p><p><a class="btn btn--olive" href="/">Homepage</a> <a class="btn btn--plain" href="/garage-floor-coatings/">Garage coatings</a> <a class="btn btn--plain" href="/contact-us/">Contact</a></p></div></section>`;
+  const body = `<section class="oops"><div class="wrap col"><h1>Page not found</h1><p class="big dim">That address does not match any page on this site. These links will help you find your way.</p><p><a class="btn btn--olive" href="/">Homepage</a> <a class="btn btn--plain" href="/garage-epoxy/">Garage coatings</a> <a class="btn btn--plain" href="/contact/">Contact</a></p></div></section>`;
   return layout({ path: '/404.html', title: 'Page not found | Prescott Valley Epoxy', description: 'The page you were looking for could not be found.', body }).replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex">');
 }

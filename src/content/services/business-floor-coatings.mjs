@@ -1,5 +1,5 @@
 export default {
-  slug: 'commercial-epoxy-flooring',
+  slug: 'business-floor-coatings',
   name: 'Commercial Epoxy Flooring',
   tagline: 'Retail, medical, food service and showrooms',
   summary: 'Seamless commercial floors for retail, medical and dental offices, restaurants, gyms and showrooms, scheduled around your hours.',
@@ -126,6 +126,6 @@ Upkeep is mostly habit: the right cleaner, mats at each door and a refresh of th
     {"q": "Can you coat a showroom without moving every vehicle out at once?", "a": "Usually. We divide the floor into zones, move inventory in stages and use fast-curing systems so each zone returns to display quickly."},
     {"q": "Do you coat restrooms and locker rooms?", "a": "Yes. Seamless floors with coved edges make these spaces much easier to clean and keep sanitary."},
   ],
-  related: ['warehouse-floor-coatings', 'metallic-epoxy-flooring', 'polyurea-floor-coatings'],
+  related: ['metallic-epoxy-floors', 'polyurea-floors'],
   cta: { heading: 'Talk to us about your business floor', body: 'Send a note about the space and your quietest days of the week. After a walk-through, we will put pricing and a day-by-day plan in writing.' },
 };

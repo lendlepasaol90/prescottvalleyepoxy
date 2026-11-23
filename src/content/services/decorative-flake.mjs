@@ -1,5 +1,5 @@
 export default {
-  slug: 'decorative-flake-flooring',
+  slug: 'decorative-flake',
   name: 'Decorative Flake Flooring',
   tagline: 'Stone-look chip floors in valley-inspired blends',
   summary: 'Multi-color chip floors with a stone-like look that hides dust and wear, in earthy blends suited to valley homes.',
@@ -70,7 +70,7 @@ The flakes themselves are decorative, but they do practical work: they hide impe
       kind: 'prose',
       heading: 'Where flake floors are used',
       toc: 'Applications',
-      body: `Garages are the obvious home for flake floors. See our [garage coatings](/garage-floor-coatings/) page for how we build them. But flake systems also work beautifully in laundry rooms and mudrooms, where a fine blend hides dust and handles water; in workshops and hobby spaces, where dropped tools and spills are part of the routine; on covered patios with an exterior topcoat; and in businesses such as retail stores, auto showrooms and gyms that need a durable, attractive floor that looks clean between cleanings.`,
+      body: `Garages are the obvious home for flake floors. See our [garage coatings](/garage-epoxy/) page for how we build them. But flake systems also work beautifully in laundry rooms and mudrooms, where a fine blend hides dust and handles water; in workshops and hobby spaces, where dropped tools and spills are part of the routine; on covered patios with an exterior topcoat; and in businesses such as retail stores, auto showrooms and gyms that need a durable, attractive floor that looks clean between cleanings.`,
     },
     {
       kind: 'steps',
@@ -127,6 +127,6 @@ And because sunlight at this elevation is strong, we use UV-stable topcoats on a
     { q: 'Will the chips come loose?', a: 'No. They are fully sealed under the topcoat and do not wear off with normal use.' },
     {"q": "Can you coat the garage and laundry room at the same time?", "a": "Yes, and many homeowners do. Coordinating blends, often a standard chip in the garage and a finer version in the laundry room, gives a consistent look."},
   ],
-  related: ['garage-floor-coatings', 'residential-epoxy-flooring', 'polyaspartic-floor-coatings'],
+  related: ['garage-epoxy', 'residential-floors', 'polyaspartic-floors'],
   cta: { heading: 'See the blends in person', body: 'Bring your questions; we will bring sage, stone, granite and slate chip boards, look at the slab and follow up with a written price.' },
 };

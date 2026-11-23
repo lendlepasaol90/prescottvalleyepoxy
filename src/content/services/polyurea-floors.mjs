@@ -1,5 +1,5 @@
 export default {
-  slug: 'polyurea-floor-coatings',
+  slug: 'polyurea-floors',
   name: 'Polyurea Floor Coatings',
   tagline: 'Flexible base coats for shops, barns and cracked slabs',
   summary: 'Tough, flexible base coats for shops, barns, RV garages and cracked slabs that move with freeze-thaw and shifting soils.',
@@ -59,7 +59,7 @@ If budget is a concern, we can coat the main working areas with a full system an
       heading: 'Polyurea-based systems',
       toc: 'System options',
       items: [
-        { name: 'Polyurea, flake and polyaspartic top', body: 'Our heavy-duty garage build: flexible base, full flake broadcast and a UV-stable, textured [polyaspartic](/polyaspartic-floor-coatings/) topcoat.' },
+        { name: 'Polyurea, flake and polyaspartic top', body: 'Our heavy-duty garage build: flexible base, full flake broadcast and a UV-stable, textured [polyaspartic](/polyaspartic-floors/) topcoat.' },
         { name: 'Solid shop floor', body: 'Pigmented polyurea with a grit topcoat for workshops and equipment bays.' },
         { name: 'High-build polyurea', body: 'Thicker layers for floors that carry heavy loads every day.' },
         { name: 'Flexible crack repair', body: 'Polyurea-based fillers that move with the slab, used under many systems.' },
@@ -136,6 +136,6 @@ We will be clear about limits, too. If a slab is actively settling or heaving, c
     {"q": "Can polyurea go in a detached garage with no insulation?", "a": "Yes. Uninsulated detached garages see the widest temperature swings of any building on a property, which is exactly where a flexible base performs best. We plan the install for a day when the slab is within the product range."},
     {"q": "Will a polyurea floor be slippery?", "a": "The base is not the walking surface. The topcoat sets the grip, and we add slip-resistant aggregate for garages, shops and gyms as standard."},
   ],
-  related: ['garage-floor-coatings', 'warehouse-floor-coatings', 'polyaspartic-floor-coatings'],
+  related: ['garage-epoxy', 'polyaspartic-floors'],
   cta: { heading: 'Find out if a flexible base fits your floor', body: 'We will map cracks, check conditions and explain whether polyurea is worth it for your space, with a written estimate.' },
 };
