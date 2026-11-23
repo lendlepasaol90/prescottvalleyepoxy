@@ -1,4 +1,4 @@
-/* Prescott Valley Epoxy — "Valley Ledger" design system */
+/* Prescott Valley Epoxy Flooring — "Valley Ledger" design system */
 :root {
   --oat: #f5f2ea;
   --paper: #fcfbf7;
@@ -472,3 +472,14 @@ strong { font-weight: 600; }
 
 /* Let comparison tables scroll inside their box instead of widening the page */
 main *:has(table) { min-width: 0; }
+
+/* Business address, email and hours (footer + contact page) */
+.nap { margin-top: 0.9rem; font-size: 0.95rem; line-height: 1.55; }
+.nap address { font-style: normal; }
+.nap p { margin: 0.35rem 0 0; }
+.nap a { color: inherit; }
+.nap__hours { opacity: 0.85; font-size: 0.9rem; }
+.hours { margin: 0.5rem 0 1rem; display: grid; gap: 0.35rem; max-width: 22rem; }
+.hours div { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(127,127,127,.25); padding-bottom: 0.35rem; }
+.hours dt { font-weight: 600; }
+.hours dd { margin: 0; }

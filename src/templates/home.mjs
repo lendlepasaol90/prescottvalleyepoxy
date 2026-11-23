@@ -1,3 +1,4 @@
+import { addressOneLine, addressHtml, directionsUrl, hoursHtml, hoursShort } from '../lib/nap.mjs';
 import { site } from '../site.mjs';
 import { esc, md, img, beginDedupe, endDedupe } from '../lib/html.mjs';
 import { layout } from './layout.mjs';
@@ -266,7 +267,7 @@ export function renderHome() {
     <div class="in">
       <h2 id="est-h">Let's take a look at your floor</h2>
       <p>Share a few details about the floor and we will book a visit at a time that suits you. Afterward you will have a written price, real samples to hold up against your walls and our honest opinion on what will hold up.</p>
-      <ul class="end__facts"><li><span>Phone</span>${phoneLink()}</li><li><span>Estimates</span><span>Free and in person</span></li><li><span>Area</span><span>Prescott Valley &amp; Quad Cities</span></li></ul>
+      <ul class="end__facts"><li><span>Phone</span>${phoneLink()}</li><li><span>Address</span><span>${esc(addressOneLine())}</span></li><li><span>Hours</span><span>${esc(hoursShort())}</span></li><li><span>Estimates</span><span>Free and in person</span></li><li><span>Area</span><span>Prescott Valley &amp; Quad Cities</span></li></ul>
     </div>
     <div class="end__card in w1">${leadForm({ id: 'home-form', heading: 'Request your free estimate', intro: 'Takes a minute. We will be in touch to schedule.', withMessage: true })}</div>
   </div>
@@ -275,8 +276,8 @@ export function renderHome() {
   endDedupe();
   return layout({
     path: '/',
-    title: 'Prescott Valley Epoxy | Garage & Concrete Floor Coatings',
-    description: 'Epoxy, flake, metallic and polyaspartic floor coatings for Prescott Valley garages, homes and businesses. Proper slab prep, written estimates and four-season systems.',
+    title: "Prescott Valley Epoxy Flooring | Epoxy Flooring Contractor",
+    description: "Prescott Valley Epoxy Flooring: epoxy flooring company in Prescott Valley, AZ for garage, flake, metallic and commercial floors. Free estimates. Call (928) 442-7421.",
     body,
     image: 'garageTwo',
     schema: [{ '@type': 'FAQPage', mainEntity: allFaqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }],

@@ -1,7 +1,15 @@
 // Site-wide configuration for Prescott Valley Epoxy.
 
 export const site = {
-  name: 'Prescott Valley Epoxy',
+  name: "Prescott Valley Epoxy Flooring",
+  owner: "Brooks Shepard",
+  category: 'Flooring Contractor',
+  description: "Prescott Valley Epoxy Flooring helps homeowners and businesses transform ordinary concrete into durable, attractive surfaces built for everyday use. Serving Prescott Valley, AZ, and surrounding communities, we specialize in garage epoxy flooring, residential epoxy coatings, commercial epoxy flooring, decorative flake systems, metallic epoxy finishes, and concrete floor coatings. Whether you're upgrading a garage, refreshing a patio, or protecting a high-traffic workspace, we offer customized flooring solutions designed for Arizona's demanding conditions. Our focus is on proper surface preparation, quality materials, and professional installation. Contact Prescott Valley Epoxy Flooring today for a free estimate!",
+  address: { street: "9101 E Valley Rd #315", city: "Prescott Valley", state: 'AZ', zip: '86314', country: 'US' },
+  hours: [
+    { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], label: 'Monday – Saturday', opens: '07:00', closes: '18:00', text: '7:00 AM – 6:00 PM' },
+    { days: ['Sunday'], label: 'Sunday', closed: true, text: 'Closed' },
+  ],
   domain: 'https://prescottvalleyepoxy.com',
   city: 'Prescott Valley',
   cityLong: 'Prescott Valley',
@@ -9,13 +17,12 @@ export const site = {
   state: 'AZ',
   locale: 'en_US',
 
-  // PLACEHOLDER — replace before launch, then set phoneVerified: true.
-  phone: '(928) 555-0139',
-  phoneHref: 'tel:+19285550139',
-  phoneVerified: false,
-  email: '',
+  phone: '(928) 442-7421',
+  phoneHref: 'tel:+19284427421',
+  phoneVerified: true,
+  email: 'info@prescottvalleyepoxy.com',
 
-  map: { query: 'Prescott Valley, AZ', lat: 34.61, lng: -112.3157, zoom: 12 },
+  map: { query: "9101 E Valley Rd #315, Prescott Valley, AZ 86314", lat: 34.59, lng: -112.31, zoom: 13 },
 
   serviceAreas: [
     { name: 'Prescott Valley', note: 'All neighborhoods, from the town center out to StoneRidge and Pronghorn Ranch.' },

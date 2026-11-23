@@ -9,6 +9,15 @@ const orgSchema = () => ({
   '@id': abs('/#business'),
   name: site.name,
   url: abs('/'),
+  ...(site.description ? { description: site.description } : {}),
+  ...(site.address
+    ? {
+        address: { '@type': 'PostalAddress', streetAddress: site.address.street, addressLocality: site.address.city, addressRegion: site.address.state, postalCode: site.address.zip, addressCountry: site.address.country },
+        geo: { '@type': 'GeoCoordinates', latitude: site.map.lat, longitude: site.map.lng },
+      }
+    : {}),
+  ...(site.hours ? { openingHoursSpecification: site.hours.filter((h) => !h.closed).map((h) => ({ '@type': 'OpeningHoursSpecification', dayOfWeek: h.days, opens: h.opens, closes: h.closes })) } : {}),
+  ...(site.owner ? { founder: { '@type': 'Person', name: site.owner } } : {}),
   areaServed: site.serviceAreas.map((a) => ({ '@type': 'Place', name: `${a.name}, AZ` })),
   ...(site.phoneVerified ? { telephone: site.phone } : {}),
   ...(site.email ? { email: site.email } : {}),
@@ -69,7 +78,7 @@ ${body}
 </main>
 ${footer()}
 <script src="/assets/js/main.js?v=${ASSET_VERSION}" defer></script>
-<script src="/assets/js/formsubmit.js" data-site="Prescott Valley Epoxy" defer></script>
+<script src="/assets/js/formsubmit.js" data-site="${esc(site.name)}" defer></script>
 </body>
 </html>
 `;

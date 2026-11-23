@@ -1,3 +1,4 @@
+import { addressOneLine, addressHtml, directionsUrl, hoursHtml, hoursShort } from '../lib/nap.mjs';
 import { site } from '../site.mjs';
 import { esc } from '../lib/html.mjs';
 import { services } from '../content/services/index.mjs';
@@ -65,13 +66,14 @@ export function header(current = '') {
 
 export function footer() {
   const m = site.map;
-  const src = `https://maps.google.com/maps?q=${encodeURIComponent(m.query)}&ll=${m.lat},${m.lng}&z=${m.zoom}&output=embed`;
+  const src = `https://maps.google.com/maps?q=${encodeURIComponent(`${site.name}, ${m.query}`)}&z=${m.zoom}&output=embed`;
   return `<footer class="ft">
   <div class="wrap ft__top">
     <div class="ft__intro">
       <a class="mark mark--ft" href="/"><span class="mark__box" aria-hidden="true"></span><span class="mark__name">${esc(site.name)}</span></a>
       <p>Garage, home and business floor coatings for Prescott Valley and the Quad Cities area.</p>
       <p><a class="ft__tel" href="${site.phoneHref}">${esc(site.phone)}</a></p>
+      <div class="nap">${addressHtml()}<p><a href="mailto:${esc(site.email)}">${esc(site.email)}</a></p><p class="nap__hours">${esc(hoursShort())}</p></div>
     </div>
     <div class="ft__map"><iframe title="Map of Prescott Valley, Arizona" src="${src}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
   </div>

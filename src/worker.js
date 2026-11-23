@@ -45,7 +45,7 @@ async function handleLead(request, env) {
   if (spam) return json({ ok: true }); // honeypot filled: quietly accept and drop
   if (Object.keys(errors).length) return json({ ok: false, error: 'Please check the highlighted fields.', errors }, 422);
 
-  const record = { ...lead, site: env.SITE_NAME || 'Prescott Valley Epoxy', receivedAt: new Date().toISOString() };
+  const record = { ...lead, site: env.SITE_NAME || 'Prescott Valley Epoxy Flooring', receivedAt: new Date().toISOString() };
   console.log('LEAD', JSON.stringify(record));
 
   const deliveries = [];
