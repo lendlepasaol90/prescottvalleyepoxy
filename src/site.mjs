@@ -79,5 +79,7 @@ export const images = {
   xLiving: { file: 'xLiving', group: 'interior', w: 1600, h: 1066, widths: [480, 800, 1200, 1600], alt: "Modern living room with a sectional sofa and pale floor" },
   xPrimer: { file: 'xPrimer', group: 'industrial', w: 1600, h: 1066, widths: [480, 800, 1200, 1600], alt: "Installer rolling primer onto a ground concrete floor" },
   xSpikes: { file: 'xSpikes', group: 'industrial', w: 1600, h: 874, widths: [480, 800, 1200, 1600], alt: "Installer in spiked shoes working a fresh self-leveling coat" },
+  driveBefore: { file: 'driveBefore', group: 'project', w: 856, h: 557, widths: [480, 856], alt: "Arizona home with a stained, worn concrete driveway before coating" },
+  driveAfter: { file: 'driveAfter', group: 'project', w: 856, h: 557, widths: [480, 856], alt: "The same driveway after a glossy tan flake coating" },
   xGrinder: { file: 'xGrinder', group: 'industrial', w: 1600, h: 1066, widths: [480, 800, 1200, 1600], alt: "Concrete grinder with dust extraction on a work site" },
 };

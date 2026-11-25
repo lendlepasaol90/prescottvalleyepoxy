@@ -176,6 +176,12 @@ strong { font-weight: 600; }
 .fact--img { padding: 0; overflow: hidden; }
 .fact--img img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 3; }
 
+.ba { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 2.5vw, 1.8rem); }
+.ba__item { position: relative; margin: 0; border: 1.5px solid var(--olive-deep); border-radius: var(--r); overflow: hidden; box-shadow: var(--hard); background: var(--oat); }
+.ba__item img { display: block; width: 100%; height: auto; }
+.ba__tag { position: absolute; top: 0.85rem; left: 0.85rem; z-index: 1; padding: 0.4rem 0.8rem; border-radius: 8px; background: var(--paper); color: var(--ink); border: 1.5px solid var(--olive-deep); font: 800 0.78rem/1 var(--head); letter-spacing: 0.08em; text-transform: uppercase; }
+.ba__tag--after { background: var(--olive); border-color: var(--olive-deep); color: #fff; }
+@media (max-width: 760px) { .ba { grid-template-columns: 1fr; } }
 .intro { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: clamp(2rem, 6vw, 5rem); }
 .intro__h { position: sticky; top: 140px; align-self: start; }
 .intro__body p:first-child::first-letter { float: left; font: 800 3.6rem/0.85 var(--head); color: var(--olive); padding: 0.35rem 0.55rem 0 0; }

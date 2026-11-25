@@ -64,6 +64,22 @@ export function renderHome() {
   </div>
 </section>
 
+<section class="s s--paper" aria-labelledby="ba-h">
+  <div class="wrap">
+    <div class="rule-h in"><h2 id="ba-h">Before and after: a stained driveway, refinished</h2><p>This driveway was covered in tire marks and old stains. We ground the concrete clean and finished it with a tan flake coating and a glossy topcoat that wipes clean.</p></div>
+    <div class="ba">
+      <figure class="ba__item in">
+        <span class="ba__tag">Before</span>
+        ${img('driveBefore', { keep: true, widths: [480, 856], sizes: '(max-width: 760px) 92vw, 590px' })}
+      </figure>
+      <figure class="ba__item in w1">
+        <span class="ba__tag ba__tag--after">After</span>
+        ${img('driveAfter', { keep: true, widths: [480, 856], sizes: '(max-width: 760px) 92vw, 590px' })}
+      </figure>
+    </div>
+  </div>
+</section>
+
 <section class="s" aria-labelledby="intro-h">
   <div class="wrap intro">
     <h2 id="intro-h" class="intro__h in">A floor company that starts with the slab</h2>
