@@ -271,6 +271,16 @@ export function renderHome() {
     </div>
     <div class="end__card in w1">${leadForm({ id: 'home-form', heading: 'Request your free estimate', intro: 'Takes a minute. We will be in touch to schedule.', withMessage: true })}</div>
   </div>
+</section>
+
+<section class="findus" aria-labelledby="findus-h">
+  <div class="wrap findus__in">
+    <h2 id="findus-h" class="findus__h">You can also find us here</h2>
+    <ul class="findus__list">
+      <li><a href="https://ezlocal.com/az/prescott-valley/concrete-contractor/0919944487" target="_blank" rel="noopener">EZlocal</a></li>
+      <li><a href="https://www.merchantcircle.com/prescott-valley-epoxy-flooring-prescott-valley-az" target="_blank" rel="noopener">MerchantCircle</a></li>
+    </ul>
+  </div>
 </section>`;
 
   endDedupe();
